@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SobreActivity" >
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/game_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/gameVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameCriadorRenato"
+        android:layout_below="@+id/gameCriadorRenato"
+        android:layout_marginTop="56dp"
+        android:text="@string/game_version" />
+
+    <TextView
+        android:id="@+id/gameCriadorGiovane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gameCriadorRenato"
+        android:layout_alignLeft="@+id/gameCriadorRenato"
+        android:layout_marginBottom="17dp"
+        android:text="@string/game_criador_giovane" />
+
+    <TextView
+        android:id="@+id/gameAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gameCriadorGiovane"
+        android:layout_alignLeft="@+id/gameCriadorGiovane"
+        android:text="@string/game_criadores" />
+
+    <TextView
+        android:id="@+id/gameCriadorRenato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameTitle"
+        android:layout_below="@+id/gameTitle"
+        android:layout_marginTop="100dp"
+        android:text="@string/game_criador_renato" />
+
+</RelativeLayout>
